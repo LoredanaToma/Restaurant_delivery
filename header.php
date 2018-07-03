@@ -31,14 +31,14 @@
 
 <div class="col-sm-1 col-md-1 col-lg-2" style="background-color:#1c1e1c;">
   <p>
-        <a href="viewCart.php" class="btn btn-info btn-lg">
-          <span class="glyphicon glyphicon-shopping-cart"></span> Vezi cos </a>
+        <a href="viewCart.php" class="btn btn-info btn-lg" style="color:white">
+          <span class="glyphicon glyphicon-shopping-cart"></span><b> Vezi cos</b></a>
 
        </div>
 
             
         <div class="logo">
-          <div class="col-sm-12 col-md-12 col-lg-12" style="background-image:url('imagini/header-dark1.jpg');">
+          <div class="col-sm-12 col-md-12 col-lg-12" style="background-image:url('imagini/header5.jpg');">
             
             <a href="index.php"><img src="imagini/imageedit_4_2869990415.png" alt="GoodFood" class="responsive" ></a>
            

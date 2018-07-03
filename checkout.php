@@ -47,23 +47,14 @@ $custRow = $query->fetch_assoc();
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
+<style>
     .container{background-color:#1c1e1c;color:#72f972;width: 1200px;padding: 50px;}
     .table{background-color:#1c1e1c;width: 65%;float: left;}
     .shipAddr{background-color:#1c1e1c;width: 30%;float: left;margin-left: 30px;}
     .footBtn{background-color:#1c1e1c;width: 95%;float: left;}
     .orderBtn {background-color:#1c1e1c;float: right;}
-   footer {
-    height: 100px;
-    max-width: 1200px;
-    max-height: 350px;
-    letter-spacing: normal;
-    font-size: 1.2em;
-    margin: 0 auto;
-    padding: 0;
-    color:#72f97;
 
-}
+
     </style>
 </head>
 <?php include "header.php";?>
@@ -115,8 +106,8 @@ $custRow = $query->fetch_assoc();
         <p><?php echo $custRow['address']; ?></p>
     </div>
     <div class="footBtn">
-        <a href="meniu.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i> Inapoi in magazin</a>
-        <a href="cartAction.php?action=placeOrder" class="btn btn-success orderBtn">Trimite comanda <i class="glyphicon glyphicon-menu-right"></i></a>
+        <a href="meniu.php" class="btn btn-warning"style="color:black"><i class="glyphicon glyphicon-menu-left"></i> Inapoi in magazin</a>
+        <a href="cartAction.php?action=placeOrder" class="btn btn-success orderBtn"style="color:black">Trimite comanda <i class="glyphicon glyphicon-menu-right"></i></a>
     </div>
 </div>
 <?php include "footer.php";?>

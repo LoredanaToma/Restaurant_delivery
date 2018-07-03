@@ -22,10 +22,10 @@ include 'dbConfig.php';
                             <center><img src="images/<?php echo $row["img"]; ?>" /></center><br />  
                                 <p class="list-group-item-text"><?php echo $row["description"]; ?></p>
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <p class="lead"><?php echo 'Pret:'.$row["price"].' Ron'; ?></p>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-5">
                                        <a class="btn btn-success" href="cartAction.php?action=addToCart&id=<?php echo $row["id"]; ?>">Adauga in cos</a>
                                     </div>
                                 </div>

@@ -67,11 +67,11 @@ $cart = new Cart;
     </tbody>
     <tfoot>
         <tr>
-            <td><a href="meniu.php" class="btn btn-warning"><i class="glyphicon glyphicon-menu-left"></i>Inapoi in magazin</a></td>
+            <td><a href="meniu.php" class="btn btn-warning"style="color:black"><i class="glyphicon glyphicon-menu-left"></i>Inapoi in magazin</a></td>
             <td colspan="2"></td>
             <?php if($cart->total_items() > 0){ ?>
             <td class="text-center"><strong>Total <?php echo ''.$cart->total().' Ron'; ?></strong></td>
-            <td><a href="acount.php" class="btn btn-success btn-block">Continua<i class="glyphicon glyphicon-menu-right"></i></a></td>
+            <td><a href="acount.php" class="btn btn-success btn-block"style="color:black">Continua<i class="glyphicon glyphicon-menu-right"></i></a></td>
             <?php } ?>
         </tr>
     </tfoot>

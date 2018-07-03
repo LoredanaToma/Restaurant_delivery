@@ -12,6 +12,7 @@ include("conn.php");
    public $nr;  //  Cheia primara
    public $nume;
    public $prenume;
+   public $data;
    public $email;
    public $mesaj;
 }
@@ -24,21 +25,24 @@ include("conn.php");
       $i=1; //  Contor de linii
       while ($guest = $stmt->fetchObject('Guest')) {
          if ($i%2==0) {
-            echo "<tr style=\"background-color:#1c1e1c; \"><td>";
+            echo "<tr style=\"background-color:#0e1110; \"><td>";
          }
          else {
-            echo "<tr style=\"background-color:#1c1e1c; \"><td>";
+            echo "<tr style=\"background-color:#171918; \"><td>";
         }
         //echo $guest->nr; echo ".    ";
-           echo "<p class=\" guest alineat\">"; 
-        echo "";
+  
+       echo "<p class=\" data \">"; 
+        echo $guest->data;
+        echo "<br />";
+        echo "<p class=\" guest alineat\">"; 
         echo $guest->nume; echo "    ";
         echo $guest->prenume; echo "    ";
         echo "<br />";
         echo $guest->mesaj;
-        echo "<br /><br /><br/>";
-        echo "</td></tr>";
-        echo "<tr><td> </td></tr>";
+        
+        echo "<br />";
+     
         $i++;
    }
    $cnx = null;

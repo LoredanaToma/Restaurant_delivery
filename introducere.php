@@ -16,16 +16,11 @@
     $email=testare($_REQUEST["email"]);
     $mesaj=testare($_REQUEST["mesaj"]);
 
-    if(empty($mesaj)){ 
-    echo '<h3 class="centrat"><br><br>Va rugam completati mesajul dumneavoastra!<h3><br>';
-    echo '<form class="centrat"><input type="button" value="Back" onClick="location.href=\'opinie.php\'"></form></center>';
-    $cnx = null;
-  }
-     else { 
-      echo ''; 
-    }
+     date_default_timezone_set('Europe/Bucharest');
+    $data = date('Y-m-d H:i:s'); // data in format 
+   
     if(isset($cnx)) {
-      $cda = "INSERT INTO guest (nr, nume, prenume, email, mesaj)VALUES (NULL, :nume, :prenume, :email, :mesaj)";
+      $cda = "INSERT INTO guest (nr, nume, prenume, data, email, mesaj) VALUES (NULL, :nume, :prenume,'$data', :email, :mesaj)";
       $stmt = $cnx->prepare($cda); 
       $stmt->bindParam(':nume', $nume, PDO::PARAM_STR);
       $stmt->bindParam(':prenume', $prenume, PDO::PARAM_STR);

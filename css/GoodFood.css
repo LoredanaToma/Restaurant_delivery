@@ -15,18 +15,38 @@
 	background-color:#1c1e1c;
 	margin: 0 auto;
 	overflow: hidden;
+	font-size: 14px;
 }
-.list-group-item-text,.list-group-item-heading, .lead, .thumbnail, .p{
-	color:#72f972;
-font-size: 16px;
+a:link, a:visited {
+    color:#72f972;
+    text-decoration: none;
+    
+
 }
 
+a:hover, a:active {
+	color: blue;
+    text-decoration:none;
+}
+
+.list-group-item-text,.list-group-item-heading, .thumbnail, p.lead, .col-md-4{
+   color:#72f972;
+   font-size: 15px;
+   text-align: center;
+}
+
+
 header {
+	padding: 5px;
 	color:#72f972;
 	float: left;
 	width: 100%;
 	text-align: right;
 	background-color:#1c1e1c;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 
@@ -46,17 +66,17 @@ header {
 	margin:0 auto;
 }
 input[type=text],[type=password]{
-	width: 50%;
+	width: 80%;
 	box-sizing: border-box;
 	border: 1px solid #95bf95;
 	border-radius: 3px;
-	font-size: 12px;
+	font-size: 15px;
 	background-color: #1c1e1c;
 	background-position: 8px 18px; 
 	background-repeat: no-repeat;
 	padding: 12px 20px 12px 35px;
 }
-input[type=submit],[type=submit1],[type=button],[type=reset]{
+input[type=submit],[type=submit1],[type=number],[type=button],[type=reset]{
 	color: black;
 	width: auto;
 }
@@ -78,14 +98,17 @@ select[name=combo]{
 .alineat {
 	margin: auto;
 	height: auto;
-	padding-left:10px;
-	padding-top: 10px;
-	padding-left: 10px;
-	padding: 5px;
     float: left;
-    
-} 
+    padding: 10px;
+    font-size:14px;
 
+} 
+.data{
+	padding: 10px;
+	color:white;
+	font-size: 12px;
+	font-style: italic;
+}
 
 footer {
 	height: 100px;
@@ -115,12 +138,13 @@ footer {
 
 div.gallery {
 	margin: 0;
-	//border:2px solid #ccc;
+    //border:2px solid #ccc;
 	float: left;
 }
 
 div.gallery:hover {
 	//border: 2px solid #777;
+	text-decoration: 
 }
 
 div.gallery img {
@@ -151,7 +175,7 @@ div.desc {
 
 .topnav a:hover {
 	
-	color:#007bff;
+	color:blue;
 }
 
 .active {

@@ -10,21 +10,22 @@
        <table class="login centrat">
         <tr>
          <td>Numele </td>
-         <td><input type="text"  name="name"  /></td>   
+         <td><input type="text"  name="name"  placeholder="Numele dvs"/></td>   
        </tr>
 
        <tr>
          <td>Email *</td>
-         <td><input type="text"  required="yes" name="email" /></td>
+         <td><input type="text"  required="yes" name="email" placeholder="Emailul dvs"minlength="8" maxlength="40" /></td>
        </tr>
 
        <tr>
          <td>Telefon *</td>
-         <td><input type="text"  required="yes" name="phone"  /></td>
+         <td><input type="text"  required="yes" name="phone" placeholder="1234-567-890" size="20" minlength="10" maxlength="13" />
+    <span class="validity"></span></td>
        </tr>
          <tr>
          <td>Adresa </td>
-         <td><input type="text" name="address"  /></td>
+         <td><input type="text" name="address" placeholder="Adresa dvs" /></td>
        </tr> <tr>
   
        <tr>

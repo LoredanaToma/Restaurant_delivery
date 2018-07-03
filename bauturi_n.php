@@ -15,25 +15,24 @@ include 'dbConfig.php';
                 while($row = $query->fetch_assoc()){
                     ?>
                    
-                <div class="item col-sm-4">
+              <div class="item col-sm-4">
                         <div class="thumbnail" style="background-color:#1c1e1c ">
                             <div class="caption">
                                 <center><h4 class="list-group-item-heading"><?php echo $row["name"]; ?></h4></center>
                             <center><img src="images/<?php echo $row["img"]; ?>" /></center><br />  
                                 <p class="list-group-item-text"><?php echo $row["description"]; ?></p>
                                 <div class="row">
-                                    <div class="col-md-4">
+                                    <div class="col-md-6">
                                         <p class="lead"><?php echo 'Pret:'.$row["price"].' Ron'; ?></p>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-5">
                                        <a class="btn btn-success" href="cartAction.php?action=addToCart&id=<?php echo $row["id"]; ?>">Adauga in cos</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-    
-
+           
 
 
             <?php } }else{ ?>

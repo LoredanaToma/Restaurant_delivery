@@ -11,7 +11,7 @@
          <td>Categoria:</td>
          <td> 
           <select name="combo">
-            <option selected value="initial">(Alege categoria)</option>
+            <option selected value="initial">(Alege categoria) required="yes"</option>
             <?php
             include("conn.php");
 
@@ -36,25 +36,25 @@
 
 
 <tr>
-   <td>Selectati imaginea: </td>
-   <td><input type="file" name="fisier" /></td>
+   <td>Incarcati imaginea la dimensiunea ceruta:<br>width: 250px<br>hight: 170px </td>
+   <td><input type="file"  required="yes" name="fisier" /></td>
 </tr>
 
 
 <tr>
    <td>Numele produsului: </td>
-   <td><input type="text" name="name" /></td>
+   <td><input type="text"placeholder="Numele produsului" required="yes" name="name" /></td>
 </tr>
 
 <tr>
    <td>Descriere:</td>
-    <td><input type="text" name="description" /></td>
+    <td><input type="text"placeholder="Descrierea produsului" name="description" /></td>
 </tr>
 
 
 <tr>
   <td>Pretul:</td>
-  <td><input type="text" name="price" /></td>
+  <td><input type="number" placeholder="Pretul" required="yes"name="price" /></td>
 </tr>
 
 <tr><br>

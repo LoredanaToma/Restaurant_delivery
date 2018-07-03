@@ -9,12 +9,12 @@
        <table class="centrat">
         <tr>
            <td>User </td>
-           <td><input type="text" required="yes" name="numeletau" /></td>
+           <td><input type="text" required="yes" name="numeletau"  minlength="3" maxlength="50"/></td>
         </tr>
 
         <tr>
            <td>Parola </td>
-           <td><input type="password" required="yes" name="parolata" /></td>
+           <td><input type="password" required="yes" name="parolata" minlength="4" maxlength="6"/></td>
         </tr>
 
         <tr>
