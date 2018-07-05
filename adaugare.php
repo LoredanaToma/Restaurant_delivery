@@ -11,7 +11,7 @@
          <td>Categoria:</td>
          <td> 
           <select name="combo">
-            <option selected value="initial">(Alege categoria) required="yes"</option>
+            <option selected value="initial">(Alege categoria)</option>
             <?php
             include("conn.php");
 

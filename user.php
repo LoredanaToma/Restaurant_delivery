@@ -46,6 +46,7 @@ session_start();
 
         echo "Comanda dvs a fost inregistrata!";
         header('Location: checkout.php');
+        
        // header('Refresh: 10');
 
     } else{

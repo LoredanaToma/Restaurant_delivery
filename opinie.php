@@ -20,7 +20,7 @@
 
        <tr>
          <td>E-mail</td>
-         <td><input type="text"placeholder="Email-ul dvs" name="email"  /></td>
+         <td><input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"required="yes"></td>
        </tr>
 
        <tr>

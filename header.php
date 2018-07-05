@@ -24,12 +24,12 @@
   <div id="continut">
     <header>
       <div class="header">
-       <div class="col-sm-1 col-md-1 col-lg-8" style="background-color:;">
-        <a href="livrare.php"><h4>Informatii privind livrarea </h4></a></div>
-        <div class="col-sm-1 col-md-1 col-lg-2" style="background-color:;">
-       <a href="vizite.php"> <h4>Impresiile clientilor nostri</h4></a></div>
+       <div class="col-sm-12 col-md-12 col-lg-8" style="background-color:;">
+        <a href="livrare.php"><h5>Informatii privind livrarea </h5></a></div>
+        <div class="col-sm-12 col-md-12 col-lg-2" style="background-color:;">
+       <a href="vizite.php"> <h5>Impresiile clientilor nostri</h5></a></div>
 
-<div class="col-sm-1 col-md-1 col-lg-2" style="background-color:#1c1e1c;">
+<div class="col-sm-12 col-md-12 col-lg-2" style="background-color:#1c1e1c;">
   <p>
         <a href="viewCart.php" class="btn btn-info btn-lg" style="color:white">
           <span class="glyphicon glyphicon-shopping-cart"></span><b> Vezi cos</b></a>

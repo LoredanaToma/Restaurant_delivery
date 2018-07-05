@@ -76,9 +76,10 @@ input[type=text],[type=password]{
 	background-repeat: no-repeat;
 	padding: 12px 20px 12px 35px;
 }
-input[type=submit],[type=submit1],[type=number],[type=button],[type=reset]{
+input[type=submit],[type=submit1],[type=number],[type=button],[type=reset],[type="email"],[type="tel"]{
 	color: black;
 	width: auto;
+
 }
 .login table, .login td, .login th {
 	border: 1px solid #95bf95;
@@ -185,8 +186,8 @@ div.desc {
 
 .topnav .icon {
 	display: none;
-	background-color: #274728;
-	color: gray;
+	background-color: #1c1e1c;
+	color: #72f972;
 }
 
 

@@ -1,6 +1,6 @@
 <?php
 // initializ shopping cart class
-include 'Cart.php';
+include 'cart.php';
 $cart = new Cart;
 ?>
 <!DOCTYPE html>
@@ -15,7 +15,7 @@ $cart = new Cart;
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
     .container{background-color:#1c1e1c;color:#72f972;padding: 10%;}
-    input[type="number"]{width: 20%;}
+    input[type="number"]{width: 30%;}
     </style>
     <script>
     function updateCartItem(obj,id){
@@ -23,7 +23,7 @@ $cart = new Cart;
             if(data == 'ok'){
                 location.reload();
             }else{
-               ''
+               window.location.reload();
             }
         });
     }
@@ -32,11 +32,12 @@ $cart = new Cart;
 <?php include "header.php";?>
 <?php include "nav.php";?>
 <body>
+    <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: #1c1e1c;">
 <div class="container">
     <h1>Cos de cumparaturi</h1>
     <table class="table">
     <thead>
-        <div class="col-sm-12 col-md-12 col-lg-12" style="background-color: #1c1e1c;">
+        
          <tr>
             <th>Produs</th>
             <th>Pret</th>
@@ -44,7 +45,7 @@ $cart = new Cart;
             <th>Subtotal</th>
             <th>&nbsp;</th>
         </tr>
-    </thead></div>
+    </thead>
     <tbody>
         <?php
         if($cart->total_items() > 0){
@@ -55,10 +56,11 @@ $cart = new Cart;
         <tr>
             <td><?php echo $item["name"]; ?></td>
             <td><?php echo ''.$item["price"].' Ron'; ?></td>
-            <td><input type="number" class="form-control text-center" value="<?php echo $item["qty"]; ?>" onchange="updateCartItem(this, '<?php echo $item["rowid"]; ?>')"></td>
+             <td><input type="number" class="form-control text-center" value="<?php echo $item["qty"]; ?>" onchange="updateCartItem(this, '<?php echo $item["rowid"]; ?>')"></td>
             <td><?php echo ''.$item["subtotal"].' Ron'; ?></td>
             <td>
-                <a href="cartAction.php?action=removeCartItem&id=<?php echo $item["rowid"]; ?>" class="btn btn-danger" onclick="return confirm('Esti sigur?')"><i class="glyphicon glyphicon-trash"></i></a>
+
+                <a href="cartAction.php?action=removeCartItem&id=<?php echo $item["rowid"]; ?>" class="btn btn-danger" onclick="return confirm('Esti sigur ca vrei sa stergi?')"><i class="glyphicon glyphicon-trash"></i></a>
             </td>
         </tr>
         <?php } }else{ ?>
@@ -75,7 +77,7 @@ $cart = new Cart;
             <?php } ?>
         </tr>
     </tfoot>
-    </table>
+    </table> </div></div>
 <?php include "footer.php";?>
 </div>
 </body>
