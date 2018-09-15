@@ -14,7 +14,7 @@ include 'dbConfig.php';
             if($query->num_rows > 0){ 
                 while($row = $query->fetch_assoc()){
                     ?>
-
+//ciorbe
                     <div class="item col-sm-4">
                         <div class="thumbnail" style="background-color:#1c1e1c ">
                             <div class="caption">
